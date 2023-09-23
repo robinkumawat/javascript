@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="warpper">
+        <label for="add to array"></label>
+        <input type="text" placeholder="number" id="name">
+        <button>print</button>
+        <select name="" id="">
+            <option value="">ascending</option>
+            <option value="">descending</option>
+            <select>
+                <button>Show</button>
+                <p></p>
+
+
+                <script>
+
+                    let countries = []
+
+                    const btn = document.querySelector("button")
+                    const inp = document.querySelector("input")
+                    const para = document.querySelector("p")
+                    let i =[];
+                    let id = setInterval(() => {
+                        btn.onclick = (() => {
+                            countries.push(para.value)
+                            if (i === para.value ) {
+                                para.innerHTML += inp.value
+                                
+                            }
+                            else (i === para.value)
+                            {
+
+                                para.innerHTML += inp.value + ","
+
+                                inp.value = ""
+                                
+                            }
+
+
+                            console.log(countries)
+                            // document.write()
+
+                        })
+
+                    }, 1000)
+
+
+
+                </script>
+    </div>
+
+</body>
+
+</html>

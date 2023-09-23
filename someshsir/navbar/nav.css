@@ -1,0 +1,22 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#wapper
+{
+    background-color: rgb(44, 38, 38);
+    height: 50px;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+ul
+{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}

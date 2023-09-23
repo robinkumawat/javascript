@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <div id="warpper">
+        <label for="add to array"></label>
+        <input type="text" placeholder="type your friend name=" id="name">
+        <button>Add To Array</button>
+        <p></p>
+
+        <button>print Array</button>
+
+        <script>
+             
+             let countries= []
+
+            const btn = document.querySelector("button")
+            const inp = document.querySelector("input")
+
+            btn.onclick = (() => {
+                countries.push(inp.value)
+                inp.value=""
+
+                
+                console.log(countries)
+            })
+        //     let array=(console.log(countries))
+        //     btn.onclick=(()=>{
+        //        array(inp.value)
+        //     })
+        //   document.write(array)
+
+
+
+
+        </script>
+    </div>
+
+
+</body>
+
+</html>

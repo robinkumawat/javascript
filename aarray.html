@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    
+
+    <div id="warpper">
+
+
+    </div>
+
+    <script>
+      const countries =["usa","india","afghanistan","pakistan","bangladesh"]
+
+      let output={}
+
+      for(i=0; i<countries.length; i++){
+         firstLatter=countries[i].slice(0,1)
+        // output[firstLatter]=[countries[i]];
+
+        if (Object.keys(output).includes(firstLatter))
+
+        output[firstLatter]=[...output[firstLatter],countries[i]]
+
+        else output[firstLatter]=[countries[i]];
+      }
+      console.log(output)
+
+
+
+    </script>
+</body>
+</html>

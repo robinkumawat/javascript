@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+
+
+    <div class="wrapper">
+        <!-- <p id="test">this is a sample string .it has many words. Hii Robin</p>
+        <p id="output"></p>
+        <input type="text" id="num"> -->
+        <p>teetar ke 2 aage teetar . teetar ke 2 peeche teetar. Aage teetar,piche teetar</p>
+    </div>
+    <script>
+        // function getWordCount()
+        // {
+        //    const  WordCount = document.getElementById("test").innerHTML;
+        //    const out = document.getElementById("output");
+
+        // //    console.log(out)
+        //    out.textContent = WordCount.split(" ").length;
+        // }
+        // getWordCount();
+
+
+        // const num= document.querySelector('num')
+        // num.onkeyup=()=>{
+        //     const test =document.querySelector("#test")
+        //     const output  =document.querySelector("#test")
+        //     const words = test.innerHTML.split(" ")
+        //     if(num.Value>words.length )
+        //     output.innerHTML="ERROR...."
+        // }
+        //  else{
+        //    letanswer
+        // }
+         
+
+        const para =document.querySelector("p")
+
+        constWord(para.innerHTML,"teetar")
+
+         function countWord(sentence,words){
+             const word = sentence.toLowerCase.split(" ")
+             word= word.toLowerCase()
+             let con=0
+            //  for const=0
+             for (i=0;i<word.length;i++){
+                if (words[i]===word) con++
+             }
+            console.log(con)
+         }
+
+
+
+
+    </script>
+</body>
+</html>

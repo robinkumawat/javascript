@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maths</title>
+</head>
+<style>
+    p{
+        color: rgb(255, 0, 0);
+        font-size: 25px;
+    }
+</style>
+<body>
+    <div id="warpper">
+        <p ></p>
+        <button onclick="">click me</button>
+    </div>
+    <script>
+        //   const btn = document.querySelector("button")
+        //   button.onclick =()=>{
+            
+          
+         const num = [83,0,29,62,71,10,4,7,5,78,23]
+         const arr=[]
+        let i=0;
+        let id = setInterval(()=>{
+            if (i===num.length-1){
+             document.querySelector("p").innerHTML +=ARandom()
+                
+                clearInterval(id)
+            }
+            else(i===num.length)
+             document.querySelector("p").innerHTML +=ARandom()+","
+            i++
+        },1000)
+        function ARandom(){
+            const random = num[Math.floor(Math.random() * num.length)]
+            if(arr.includes(random)){
+                return ARandom()
+            }
+            else
+            {
+                arr.push(random)
+                return random
+            }
+        }
+    
+    </script>
+</body>
+</html>
