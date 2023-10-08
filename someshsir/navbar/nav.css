@@ -6,7 +6,7 @@
 }
 #wapper
 {
-    background-color: rgb(44, 38, 38);
+    
     height: 50px;
     width: 700px;
     align-items: center;
@@ -16,7 +16,22 @@
 }
 ul
 {
+    background-color: rgb(44, 38, 38);
+    color: aliceblue;
     display: flex;
     list-style: none;
     gap: 35px;
+    margin: 1px;
+    padding: 15px;
+}
+li span{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #201c1c;
+    color: white;
+    padding: 4px 6px;
+    border-radius: 4px;
+    text-wrap: nowrap;
 }
